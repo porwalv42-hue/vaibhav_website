@@ -58,7 +58,7 @@ class MainApp extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(8),
       child: const Image(
-      image: AssetImage('assets/Vaibhav_Porwal.jpg'),
+      image: AssetImage('Vaibhav_Porwal.jpg'),
       width: 250,
       height: 250,
       fit: BoxFit.fitWidth,
@@ -112,7 +112,7 @@ class MainApp extends StatelessWidget {
       children: [
         Spacer(flex: 1,),
 
-        _nextSectionWidget('assets/education.svg', () {
+        _nextSectionWidget('education.svg', () {
           Navigator.push(
             context,
             MaterialPageRoute<void>(builder: (context) => EducationScreen()),
@@ -121,11 +121,11 @@ class MainApp extends StatelessWidget {
 
         Spacer(flex: 1,),
 
-        _nextSectionWidget('assets/work.svg', () {}),
+        _nextSectionWidget('work.svg', () {}),
 
         Spacer(flex: 1,),
         
-        _nextSectionWidget('assets/trophy.svg', () {}),
+        _nextSectionWidget('trophy.svg', () {}),
 
         Spacer(flex: 1,),
 
