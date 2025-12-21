@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaibhav_website/award.dart';
 import 'app_strings.dart' as appStrings;
 import 'package:flutter_svg/flutter_svg.dart';
 import 'education.dart';
@@ -125,7 +126,11 @@ class MainApp extends StatelessWidget {
 
         Spacer(flex: 1,),
         
-        _nextSectionWidget('trophy.svg', () {}),
+        _nextSectionWidget('trophy.svg', () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => AwardScreen()));
+        }),
 
         Spacer(flex: 1,),
 

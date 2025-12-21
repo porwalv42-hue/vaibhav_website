@@ -1,0 +1,22 @@
+{
+    "awards": [
+        {
+        "title": "Excellence Award",
+        "issuer": "Samsung Research Institute Noida",
+        "description": "Awarded for significant contribution in Android Baklava OS upgrade of leading models.",
+        "date": "Quarter 3, 2025"
+        },
+        {
+        "title": "Excellence Award",
+        "issuer": "Samsung Research Institute Noida",
+        "description": "Awarded for unparalleled contribution in Framework Team.",
+        "date": "Quarter 3, 2022"
+        },
+        {
+        "title": "Summer Undergraduate Research Award",
+        "issuer": "Indian Institute of Technology Delhi",
+        "description": "Awarded for excellence in applied research for project titled 'Design of surface enhanced raman scattering sensor chips for chemical sensing.'",
+        "date": "Year 2018"
+        }
+    ]
+}
