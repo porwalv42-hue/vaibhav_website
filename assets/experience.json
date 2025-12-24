@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Lead Engineer",
+        "company": "Samsung Research Institute Noida",
+        "location": "Noida, India",
+        "duration": "March 2023 - Present",
+        "responsibilities": [
+            "Led development of foundational feature Samsung Screen Recorder for the Samsung One UI platform, directly shaping the mobile experience used daily by the entire global Samsung smartphone user base",
+            "Worked for Capture and Screen AI team (JAVA + Kotlin + Samsung Galaxy AI libraries)",
+            "Implemented External Dex Display Recording, launched with galaxy unpack July 2025 (JAVA + Android framework)",
+            "Architected restructuring of Samsung Capture code repository",
+            "Implemented Flex Mode Top-Half Recording for Foldables, launched with galaxy unpack July 2024 (JAVA + OpenGL)",
+            "Optimized code repository of Tags app, reducing build time by 8%",
+            "Mentored junior engineers and interns, fostering a collaborative and innovative team environment"
+        ]
+    },
+    {
+        "title": "Visiting Engineer",
+        "company": "Samsung Research Institute Suwon",
+        "location": "Suwon, South Korea",
+        "duration": "July 2022 - August 2022",
+        "responsibilities": [
+            "Collaborated with Korean R&D members for new feature and maintenance of Samsung Capture app"
+        ]
+    },
+    {
+        "title": "Engineer",
+        "company": "Samsung Research Institute Noida",
+        "location": "Noida, India",
+        "duration": "September 2020 - March 2023",
+        "responsibilities": [
+            "Recipient of Excellence Award for unparalleled contribution in Framework Team",
+            "Worked as an Android App Developer for Samsung One UI Home and Bixby Routines (JAVA + Kotlin)",
+            "Owned Samsung One UI Home app’s settings module, delivering new feature and continuous maintenance",
+            "Implemented media page related setting in Samsung One UI Home Screen settings menu (JAVA)",
+            "Implemented Taskbar settings menu in display settings page of Samsung Settings app (JAVA)",
+            "Contributed in continuous maintenance of One UI Home project in collaboration with Quality Assessment team"
+        ]
+    },
+    {
+        "title": "Intern",
+        "company": "Samsung Research Institute Noida",
+        "location": "Noida, India",
+        "duration": "May 2019 - July 2019",
+        "responsibilities": [
+            "Engineered log analysis tool using python (TKinter + regex), streamlining debugging workflows"
+        ]
+    }
+]

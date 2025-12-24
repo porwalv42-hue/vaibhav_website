@@ -2,6 +2,8 @@ import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "dart:convert";
 
+import "package:vaibhav_website/utils.dart";
+
 class AwardScreen extends StatelessWidget {
   const AwardScreen({super.key});
 
@@ -15,7 +17,7 @@ class AwardScreen extends StatelessWidget {
       ),
       body: Center(
         child: FutureBuilder<List<Map<String, String>>>(
-          future: _loadAwardsFromJson(),
+          future: loadDataFromJson('assets/awards.json'),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return CircularProgressIndicator();
@@ -41,13 +43,6 @@ class AwardScreen extends StatelessWidget {
         return _buildAwardCard(awards[index]);
       },
     );
-  }
-
-  Future<List<Map<String, String>>> _loadAwardsFromJson() async {
-    final jsonString = await rootBundle.loadString('assets/awards.json');
-    final List<dynamic> jsonData = json.decode(jsonString)['awards'];
-    print('Loaded awards data: $jsonData');
-    return jsonData.map((item) => Map<String, String>.from(item as Map)).toList();
   }
 
   Widget _buildAwardCard(Map awardDetails) {
