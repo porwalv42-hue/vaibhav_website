@@ -16,27 +16,29 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.deepPurple.shade100,
-
-        appBar: AppBar(
-          title: const Text(appStrings.welcomeTitle),
-          backgroundColor: Colors.deepPurple.shade200,
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.purple.shade100, Colors.deepPurple.shade200],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
           ),
-
-        body: Center(
-          child: Builder(
-            builder: (BuildContext context) {
-              return Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Spacer(flex : 1),
-                  _buildProfileSection(),
-                  Spacer(flex : 1),
-                  _buildButtonSection(context),
-                  Spacer(flex : 1),
-                ],
-              );
-            },
+          child: Center(
+            child: Builder(
+              builder: (BuildContext context) {
+                return Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Spacer(flex : 1),
+                    _buildProfileSection(),
+                    Spacer(flex : 1),
+                    _buildButtonSection(context),
+                    Spacer(flex : 1),
+                  ],
+                );
+              },
+            ),
           ),
         ),
       ),
@@ -82,10 +84,10 @@ class MainApp extends StatelessWidget {
         const SizedBox(height: 16),
         Text(
           appStrings.aboutMessage,
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 14,
-            fontWeight: FontWeight.w400,
-            color: Colors.black54,
+            fontWeight: FontWeight.w700,
+            color: Colors.deepPurple.shade400,
           ),
           maxLines: 6,
         ),
@@ -101,10 +103,13 @@ class MainApp extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8),
             ),
-            backgroundColor: Colors.deepPurple.shade400,
+            backgroundColor: Colors.deepPurple.shade200,
             foregroundColor: Colors.black,
           ),
-          child: SvgPicture.asset(imageAsset, width: 120, height: 120), //const Text('View Portfolio'),
+          child: Padding(
+            padding: EdgeInsets.all(16.0),
+            child: SvgPicture.asset(imageAsset, width: 100, height: 100), 
+          ),
         );
   }
 
