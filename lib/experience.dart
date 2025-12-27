@@ -7,10 +7,10 @@ class ExperienceScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lime.shade100,
+      backgroundColor: Colors.purple.shade100,
       appBar: AppBar(
         title: const Text('Professional Experience'),
-        backgroundColor: Colors.lime.shade200,
+        backgroundColor: Colors.purple.shade100,
       ),
       body: FutureBuilder<List>(
         future: loadDataFromJsonExperience('assets/experience.json'),
@@ -43,7 +43,7 @@ class ExperienceScreen extends StatelessWidget {
   Widget _buildExperienceCard(Map experience) {
     return Card(
       margin: const EdgeInsets.all(16),
-      color: Colors.lime.shade300,
+      color: Colors.deepPurple.shade200,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Row(
@@ -66,22 +66,22 @@ class ExperienceScreen extends StatelessWidget {
       children: [
         Text(
           experience['title'],
-          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.purple.shade900),
         ),
         const SizedBox(height: 8),
         Text(
           experience['company'],
-          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.purple.shade900),
         ),
         const SizedBox(height: 8),
         Text(
           experience['duration'],
-          style: const TextStyle(fontSize: 14, fontStyle: FontStyle.italic),
+          style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, fontStyle: FontStyle.italic, color: Colors.purple.shade900),
         ),
         const SizedBox(height: 12),
         Text(
           experience['location'],
-          style: const TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.purple.shade900),
         ),
       ],
     );

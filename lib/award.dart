@@ -10,10 +10,10 @@ class AwardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber.shade100,
+      backgroundColor: Colors.purple.shade100,
       appBar: AppBar(
         title: Text('Awards & Honors'),
-        backgroundColor: Colors.amber.shade200,
+        backgroundColor: Colors.purple.shade100,
       ),
       body: Center(
         child: FutureBuilder<List<Map<String, String>>>(
@@ -48,7 +48,7 @@ class AwardScreen extends StatelessWidget {
   Widget _buildAwardCard(Map awardDetails) {
     return Card(
       margin: EdgeInsets.all(16),
-      color: Colors.amber.shade300,
+      color: Colors.deepPurple.shade200,
       child: Padding(
         padding: EdgeInsets.all(16),
         child: Column(
